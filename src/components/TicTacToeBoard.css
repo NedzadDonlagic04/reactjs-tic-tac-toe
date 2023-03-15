@@ -1,0 +1,28 @@
+.tic-tac-toe-board {
+	--board-color: black;
+	--board-border: .3rem;
+
+	--grid-row-column-template: repeat(3, 20vmin);
+
+	display: inline-grid;
+
+	grid-template-rows: var(--grid-row-column-template);
+	grid-template-columns: var(--grid-row-column-template);
+
+	user-select: none;
+
+	background-color: var(--board-color);
+	border: var(--board-border) solid var(--board-color);
+	gap: var(--board-border);
+}
+
+.tic-tac-toe-board .piece {
+	font-size: var(--h1-font-size);
+	font-weight: bold;
+
+	border: none;
+	
+	cursor: pointer;
+
+	background-color: white;
+}
