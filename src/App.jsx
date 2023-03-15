@@ -4,7 +4,7 @@ import TicTacToeBoard from './components/TicTacToeBoard';
 function App(props) {
 	return (
 		<>
-			<h1 className='tic-tac-toe-h1'>{props.title}</h1>
+			<h1 className='tic-tac-toe-title'>{props.title}</h1>
 			<TicTacToeBoard />
 		</>
 	);
