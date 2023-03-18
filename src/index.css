@@ -10,7 +10,12 @@
 }  
 
 :root {
-	--h1-font-size: max(5vmin, 2rem);
+	--h1-font-size: 5vmax;
+	--bigger-h1-font-size: calc(var(--h1-font-size) * 1.5);
+	--smaller-h1-font-size: calc(var(--h1-font-size) * 0.5);
+
+	--red-text-color: hsla(0, 80%, 60%, .9);
+	--green-text-color: hsl(140, 74%, 59%);
 }
 
 html {
