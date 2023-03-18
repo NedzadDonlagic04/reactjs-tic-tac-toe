@@ -16,13 +16,59 @@
 	gap: var(--board-border);
 }
 
-.tic-tac-toe-board .piece {
-	font-size: var(--h1-font-size);
-	font-weight: bold;
+.piece {
+	font-size: var(--smaller-h1-font-size);
 
 	border: none;
 	
 	cursor: pointer;
 
 	background-color: white;
+
+	animation-duration: 500ms;
+	animation-name: signPlace;
+	animation-fill-mode: forwards;
+}
+
+.piece:empty {
+	animation-name: none;
+}
+
+.piece.win {
+	animation-name: winningPosition;
+}
+
+.piece.lose {
+	animation-name: losingPosition;
+}
+
+@keyframes signPlace {
+	from {
+		font-size: var(--bigger-h1-font-size);
+	} 
+	to {
+		font-size: var(--h1-font-size);
+	}
+}
+
+@keyframes winningPosition {
+	from {
+		color: black;
+		font-size: var(--h1-font-size);
+	} 
+	to {
+		color: var(--green-text-color);
+		font-size: var(--bigger-h1-font-size);
+	}
+}
+
+@keyframes losingPosition {
+	from {
+		color: black;
+		font-size: var(--h1-font-size);
+	} 
+	to {
+		color: var(--red-text-color);
+		font-size: var(--smaller-h1-font-size);
+	}
 }
