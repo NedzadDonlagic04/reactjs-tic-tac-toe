@@ -13,5 +13,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 const link = document.querySelector('link[rel="icon"]');
 
 if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    link.href = '/tic-tac-toe-icon-light.png';
+    link.href = './tic-tac-toe-icon-light.png';
 }
